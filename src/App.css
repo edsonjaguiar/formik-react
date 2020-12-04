@@ -1,0 +1,114 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+.form{
+    margin-top: 13em;
+}
+
+.form .Field, .btn{
+    outline: none;
+    margin-bottom: 20px !important;
+    margin: auto;
+    display: block;
+    width: 30em;
+    height: 3em;
+    padding: 7px 10px;
+}
+
+::-webkit-input-placeholder {
+    font-size: 15px;
+}
+
+.form .text{
+    text-align: center;
+    font-size: 20px;
+    margin: 10px;
+    color: #000;
+}
+
+.form .text:nth-child(1){
+    position: relative;
+    left: -175px;
+}
+
+.form .text:nth-child(3){
+    position: relative;
+    left: -155px;
+}
+
+.form .text:nth-child(4){
+    position: relative;
+    left: -155px;
+}
+
+.form .btn{
+    border: none;
+    background: linear-gradient(to right, #A127A8, #8629B3, #582C9C);
+    color: #fff;
+    font-weight: bold;
+}
+
+.form .btn:hover{
+    background: #442079;
+}
+
+.form .Field{
+    border: 1px solid #8f8e8e;
+    border-bottom: 2px solid #8441E8;
+}
+
+.form .btn{
+    cursor: pointer;
+}
+
+.error{
+    color: red;
+    font-size: 16px;
+    position: relative;
+    text-align: center;
+    top: -1em;
+    left: -110px;
+}
+
+@media(max-width: 380px){
+    .form{
+        margin-top: 10em;
+    }
+
+    .form .Field, .btn{
+        width: 100%;
+    }
+
+    .form .text:nth-child(1){
+        position: relative;
+        left: -150px;
+    }
+    
+    .form .text:nth-child(3){
+        position: relative;
+        left: -125px;
+    }
+    
+    .form .text:nth-child(4){
+        position: relative;
+        left: -125px;
+    }
+    .error{
+        position: relative;
+        left: -70px;
+    }
+}
+
+@media(min-width: 40em){
+    .form .Field:focus{
+        transition: all 0.5s;
+        transform: scale(1.2);
+    }
+}
